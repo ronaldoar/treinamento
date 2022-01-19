@@ -16,4 +16,7 @@ public interface Veiculo {
 	
 	public String getCambio();
 	public void setCambio(String cambio);
+	
+	public void setRevisao(boolean revisao);
+	public boolean isRevisao();
 }

@@ -4,11 +4,12 @@ import java.util.Objects;
 
 public class Gol implements Veiculo {
 	
-	public String placa;
-	public int anoFabricacao;
-	public String modelo;
-	public String fabricante;
-	public String cambio;
+	private String placa;
+	private int anoFabricacao;
+	private String modelo;
+	private String fabricante;
+	private String cambio;
+	private boolean revisao;
 	
 	public Gol() {
 		this.placa = "AXV1452";
@@ -72,6 +73,16 @@ public class Gol implements Veiculo {
 	public int hashCode() {
 		return Objects.hash(placa);
 	}
+	
+	@Override
+	public boolean isRevisao() {
+		return revisao;
+	}
+
+	@Override
+	public void setRevisao(boolean revisao) {
+		this.revisao = revisao;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -90,5 +101,4 @@ public class Gol implements Veiculo {
 		return "Gol [placa=" + placa + ", anoFabricacao=" + anoFabricacao + ", modelo=" + modelo + ", fabricante="
 				+ fabricante + ", cambio=" + cambio + "]";
 	}
-	
 }

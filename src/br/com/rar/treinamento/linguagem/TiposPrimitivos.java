@@ -8,14 +8,19 @@ public class TiposPrimitivos {
 	private char sexo;
 	private boolean ativo;
 	private double salario;
+	private byte sinal;
+	
 	
 	public TiposPrimitivos() {
-		System.out.println(idade);
-		System.out.println(matricula);
-		System.out.println(rg);
-		System.out.println(sexo);
-		System.out.println(ativo);
-		System.out.println(salario);
+		System.out.println("idade: "+idade);
+		System.out.println("matricula: "+matricula);
+		System.out.println("rg: "+rg);
+		System.out.println("sexo: "+sexo);
+		System.out.println("ativo: "+ativo);
+		System.out.println("salario: "+salario);
+		System.out.println("sinal: "+sinal);
+		
+
 	}
 	
 	public void inicializandoValores() {
@@ -25,6 +30,7 @@ public class TiposPrimitivos {
 		this.sexo = 'M';
 		this.ativo = true;
 		this.salario = 1280.1;
+		this.sinal = 1;
 	}
 
 	public short getIdade() {
@@ -75,12 +81,17 @@ public class TiposPrimitivos {
 		this.salario = salario;
 	}
 
+	public byte getSinal() {
+		return sinal;
+	}
+
+	public void setSinal(byte sinal) {
+		this.sinal = sinal;
+	}
+
 	@Override
 	public String toString() {
 		return "TiposPrimitivos [idade=" + idade + ", matricula=" + matricula + ", rg=" + rg + ", sexo=" + sexo
-				+ ", ativo=" + ativo + ", salario=" + salario + "]";
+				+ ", ativo=" + ativo + ", salario=" + salario + ", sinal=" + sinal + "]";
 	}
-
-	
-
 }

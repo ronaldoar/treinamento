@@ -1,5 +1,7 @@
 package br.com.rar.treinamento.executavel;
 
+import br.com.rar.treinamento.linguagem.CondicaoArray;
+
 public class ArrayExec {
 	
 	public static void main(String[] args) {
@@ -10,6 +12,10 @@ public class ArrayExec {
 		//CondicaoArray ca = new CondicaoArray();
 		//ca.percorrerArray();
 		//ca.atribuirValorNaPosicao(2, "X");
+		
+		new CondicaoArray().percorrerArray();
+		
+		CondicaoArray.pegarConteudo(1);
 		
 	}
 }

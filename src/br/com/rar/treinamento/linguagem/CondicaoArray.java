@@ -28,11 +28,11 @@ public class CondicaoArray {
 	}
 	
 	
-	public void percorrerArray() {
-		letras = new String[] {"A","B","C","D"};
+	public void percorrerArray() { 
+		letras = new String[] {"A","B","C","D","E"};
 		
-		for(int i=0; i<letras.length; i++) {
-			System.out.println(letras[i]);
+		for(int i=letras.length-1; i>0; --i) {
+			System.out.print(letras[i]+", ");
 		}
 	}
 	
